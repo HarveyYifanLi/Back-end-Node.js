@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1= "Search student info"
+  form(method='POST',action='/students/search')
+    input(name='firstname',type='text',placeholder='Student First Name')
+    input(type='submit')
